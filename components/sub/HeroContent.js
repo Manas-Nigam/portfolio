@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/public/utils/motion";
+import {
+  slideInFromLeft,
+  slideInFromRight,
+  slideInFromTop,
+} from "@/public/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
@@ -41,7 +45,9 @@ export default function HeroContent() {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with expertise in frontend development. I have 1 year of experience in Website and Software development. Check out my projects and skills.
+          I&apos;m a Full Stack Software Engineer with expertise in{" "}
+          <b>Frontend development</b>. I have 1 year of experience in Website
+          and Software development. Check out my projects and skills.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
@@ -56,7 +62,7 @@ export default function HeroContent() {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="assets/mainIconsdark.svg"
+          src="/assets/mainIconsdark.svg"
           alt="work icons"
           height={650}
           width={650}

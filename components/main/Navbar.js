@@ -19,7 +19,7 @@ export default function Navbar() {
           />
 
           <span className="font-bold ml-[10px] text-lg hidden md:block text-gray-300">
-            Manas Nigam
+            John Doe
           </span>
         </a>
 
